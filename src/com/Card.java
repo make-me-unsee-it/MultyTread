@@ -3,7 +3,7 @@ package com;
 import java.math.BigDecimal;
 
 public class Card {
-    public BigDecimal accountBalance;
+    public volatile BigDecimal accountBalance;
 
     public Card(String accountBalance) {
         this.accountBalance = new BigDecimal(accountBalance);
